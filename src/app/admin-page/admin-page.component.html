@@ -1,0 +1,17 @@
+<div class="container">
+
+
+<h2>
+ tu es  Admin
+</h2>
+
+<hr>
+
+
+liste des users :
+
+<ul *ngFor="let item of usernames">
+  <input type="text" #message>
+  <li> {{item.name}} <button class="btn btn-warning"(click)="sendAlertTo(item.id, message.value); message.value=''"> Send alert</button> </li>
+</ul></div>
+

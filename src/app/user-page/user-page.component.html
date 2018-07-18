@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1> Bonjour {{userName | uppercase}}</h1>
+ <hr>
+ <div style="background-color:#3f9684">
+  <br>
+  <ol>
+    <li class="line-text">  {{messageAffiche}} </li>
+  </ol>
+
+</div>
+  <input [(ngModel)]="messageEnvoie" (keyup.enter)="sendToServer()" placeholder="Votre message ..." #message>
+  <button id="btn" class="btn btn-primary"(click)="sendToServer()"> Envoi </button>
+
+
+
+</div>
+
